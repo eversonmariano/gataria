@@ -27,3 +27,16 @@ docker push evermariano/gataria-backend-images:dev
 docker tag gataria-backend-catalog:dev evermariano/gataria-backend-catalog:dev2
 docker push evermariano/gataria-backend-catalog:dev2
 
+
+
+##Github Actions gataria
+
+App ID: 382826
+
+Installation ID: 41237591
+
+kubectl create secret generic controller-manager \
+    -n github-actions \
+    --from-literal=github_app_id=382826 \
+    --from-literal=github_app_installation_id=41237591
+    --from-file=github_app_private_key=github_app_installat/home/leao/Downloads/gataria-mariano-actions.2023-08-29.private-key.pem
